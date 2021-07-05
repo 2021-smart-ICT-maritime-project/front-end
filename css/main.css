@@ -1,0 +1,42 @@
+*{
+    margin:0;
+}
+
+h1{
+    position: fixed;
+    text-align: center;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+main{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.guest{
+    padding:5rem;
+    border:1px solid black;
+    margin : 2rem;
+}
+
+.consultant{
+    padding:5rem;
+    border: 1px solid black;
+    margin:2rem;
+}
+
+footer{
+    position: fixed;
+    top:95vh;
+    left:10vh;
+}
