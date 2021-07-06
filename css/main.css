@@ -11,6 +11,7 @@ h1{
     bottom: 0;
 }
 
+
 main{
     position: fixed;
     display: flex;
@@ -23,16 +24,36 @@ main{
     bottom: 0;
 }
 
+
+
 .guest{
     padding:5rem;
     border:1px solid black;
+    border-radius: 15px;
     margin : 2rem;
 }
 
 .consultant{
     padding:5rem;
     border: 1px solid black;
+    border-radius: 15px;
     margin:2rem;
+}
+
+@media only screen and (max-width:600px){
+    h1{
+        font-size: 1.3rem;
+    }
+    
+    .guest, .consultant{
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width:425px){
+    h1{
+        font-size: 1rem;
+    }
 }
 
 footer{

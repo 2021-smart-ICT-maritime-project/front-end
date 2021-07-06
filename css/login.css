@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+}
+
+a {
+    text-align: right;
+    text-decoration: none;
+    color: chocolate;
+}
+
+input {
+    width: 97%;
+}
+
+.wrap {
+    width: 300px;
+    margin: 200px auto;
+}
+
+.mybtn {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.password_lost {
+    text-align: right;
+}
+
+.sign_up {
+    text-align: center;
+}
+
+.sign_up_using {
+    text-align: center;
+}
+
+.Google {
+    background: orange;
+}
+
+.Naver {
+    background: greenyellow;
+}
+
+.Facebook {
+    background: dodgerblue;
+}
