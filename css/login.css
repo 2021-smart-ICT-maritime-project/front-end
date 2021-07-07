@@ -41,17 +41,11 @@ input {
     width: 100%;
 }
 
-
- .btn-grad:hover {
-   background-position: left center; /* change the direction of the change here */
+.btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
    color: #fff;
    text-decoration: none;
  }
-
-/* .btn-grad {
-    
-    margin: auto;
-} */
 
 .id_password_lost, .sign_up {
     text-align: right;
