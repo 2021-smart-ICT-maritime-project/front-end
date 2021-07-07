@@ -1,72 +1,79 @@
-body{
-    overflow:auto;
-    margin:0;
+body {
+    overflow: auto;
+    margin: 0;
 }
 
-footer{
-    position: fixed;
-    top:95vh;
-    left:10vh;
+footer {
+    /* position: fixed; */
+    top: 95vh;
+    left: 10vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin: 0.25rem;
 }
 
 .wrap {
     width: 20rem;
     margin: 5rem auto;
-
-}
-h1 {
-    text-align: center;
-}
-
-p{
-    margin: 0.25rem;
-}
-
-input {
-    width: 97%;
 }
 
 .btn-grad {
-    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
+    color: white;
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
     border-color: white;
     width: 100%;
+
 }
 
-.btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
 
-.id_password_lost, .sign_up {
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* .btn-grad {
+    
+    margin: auto;
+} */
+
+.id_password_lost,
+.sign_up {
     text-align: right;
 }
 
-.id_password_lost a, .sign_up a{
-    
+.id_password_lost a,
+.sign_up a {
+
     text-decoration: none;
     color: chocolate;
 }
 
-.social_login_icon{
-    border:1px solid black;
+.social_login_icon {
+    border: 1px solid black;
 }
 
-.social_login_icon{
+.social_login_icon {
     display: flex;
     justify-content: center;
 }
 
-.social_login_icon img{
+.social_login_icon img {
     width: 3rem;
     height: 3rem;
     margin: 1.5rem;

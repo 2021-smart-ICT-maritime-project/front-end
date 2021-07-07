@@ -1,0 +1,64 @@
+body {
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6
+}
+
+.question-box {
+    display: inline-block;
+    float: right;
+    margin: 10px 500px;
+    background: gray;
+    color: white;
+
+    padding: 5rem;
+    border:1px solid gray;
+    border-radius: 15px;
+}
+
+.info-box {
+    display: inline-block;
+}
+
+.connection{
+    display: inline-block;
+}
+
+.connection-info{
+    display: inline-block;
+    float: right;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+ul.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul.tabs li {
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+ul.tabs li.current {
+    background: #ededed;
+    color: #222;
+}
+
+.tab-content {
+    display: none;
+    background: #ededed;
+    padding: 15px;
+}
+
+.tab-content.current {
+    display: inherit;
+}
