@@ -1,48 +1,79 @@
+body{
+    overflow:auto;
+    margin:0;
+}
+
+footer{
+    position: fixed;
+    top:95vh;
+    left:10vh;
+}
+
+.wrap {
+    width: 20rem;
+    margin: 5rem auto;
+
+}
 h1 {
     text-align: center;
 }
 
-a {
-    text-align: right;
-    text-decoration: none;
-    color: chocolate;
+p{
+    margin: 0.25rem;
 }
 
 input {
     width: 97%;
 }
 
-.wrap {
-    width: 300px;
-    margin: 200px auto;
-}
-
-.mybtn {
-    width: 100%;
-    margin: auto;
+.btn-grad {
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
     display: block;
+    border-color: white;
+    width: 100%;
 }
 
-.password_lost {
+
+ .btn-grad:hover {
+   background-position: left center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+/* .btn-grad {
+    
+    margin: auto;
+} */
+
+.id_password_lost, .sign_up {
     text-align: right;
 }
 
-.sign_up {
-    text-align: center;
+.id_password_lost a, .sign_up a{
+    
+    text-decoration: none;
+    color: chocolate;
 }
 
-.sign_up_using {
-    text-align: center;
+.social_login_icon{
+    border:1px solid black;
 }
 
-.Google {
-    background: orange;
+.social_login_icon{
+    display: flex;
+    justify-content: center;
 }
 
-.Naver {
-    background: greenyellow;
-}
-
-.Facebook {
-    background: dodgerblue;
+.social_login_icon img{
+    width: 3rem;
+    height: 3rem;
+    margin: 1.5rem;
 }
