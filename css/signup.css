@@ -1,0 +1,111 @@
+body {
+    overflow: auto;
+    margin: 0;
+    background-color: #e1f4f5;
+    /*배경에 색깔 넣으면 좋을 것 같은데 적용이 안되네*/
+}
+
+footer {
+    /* position: fixed; */
+    top: 95vh;
+    left: 10vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin: 0.25rem;
+}
+
+div p {
+    color: gray;
+    font-size: 0.5em;
+}
+
+.inputYearMonthDay {
+    display: inline-block;
+}
+
+.wrap {
+    width: 20rem;
+    margin: 5rem auto;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border-color: white;
+    width: 100%;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.id_password_lost {
+    text-align: right;
+}
+
+.id_password_lost a {
+
+    text-decoration: none;
+    color: chocolate;
+}
+
+.social_login_icon {
+    border: 1px solid black;
+}
+
+.social_login_icon {
+    display: flex;
+    justify-content: center;
+}
+
+.social_login_icon img {
+    width: 3rem;
+    height: 3rem;
+    margin: 1.5rem;
+}
+
+#inputYear {
+    display: inline-block;
+    width: 40%;
+}
+
+#inputMonth {
+    display: inline-block;
+    width: 30%;
+}
+
+#inputDay {
+    display: inline-block;
+    width: 26%;
+}
+
+#inputPhone {
+    display: inline-block;
+    width: 55%;
+}
+
+#verifyPhoneButton {
+    display: inline-block;
+    float: right;
+}

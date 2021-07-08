@@ -7,11 +7,11 @@ body {
 .question-box {
     display: inline-block;
     float: right;
-    margin: 10px 500px;
+    margin: 2rem 2rem 0rem 0rem;
     background: gray;
     color: white;
 
-    padding: 5rem;
+    padding: 4rem;
     border:1px solid gray;
     border-radius: 15px;
 }
