@@ -4,8 +4,13 @@ body {
     line-height: 1.6
 }
 
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
 .question-box {
-    display: inline-block;
     float: right;
     margin: 2rem 2rem 0rem 0rem;
     background: gray;
@@ -25,14 +30,9 @@ body {
 }
 
 .connection-info{
-    display: inline-block;
     float: right;
 }
 
-.container {
-    width: 1600px;
-    margin: 0 auto;
-}
 
 ul.tabs {
     margin: 0px;
