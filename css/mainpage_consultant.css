@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+}
+
+/* nav */
+
 nav {
     background-color: teal;
-    /* background: cadetblue; */
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
     width: 100%;
@@ -43,7 +48,6 @@ nav .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
-    display: flex;
 }
 
 /* menu icon */
@@ -135,6 +139,8 @@ nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
 
 }
 
+
+
 /* 최대 767px 까지 */
 @media (max-width:767px) {
     nav li a {
@@ -146,7 +152,41 @@ nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
     }
 }
 
-nav a {
+
+.searches{
+    position: fixed;
+    top : 1.75rem;
+    left:40vw;
+    display: flex;
+    color:white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:784px) {
+    .searches{
+        display:none;
+    }
+}
+footer {
+    position: fixed;
+    top: 95vh;
+    left: 10vh;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.account_circle {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+a {
     display: block;
     text-align: center;
     margin: .25rem;
@@ -156,88 +196,52 @@ nav a {
     color: white;
     background: teal;
     border-radius: 15px;
-  }
-
-nav a:hover{
-    color: white;
 }
 
-body {
-    margin-top: 0px;
-    font-family: 'Noto Sans KR', sans-serif;
-    line-height: 1.6;
+header{
+    border: 1px solid black;
+    position: absolute;
+    top:15vh;
+    width:100%;
 }
 
-main {
+header ul{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.container {
-    width: 1600px;
-    margin: 130px auto;
-    flex: auto;
-}
-
-.question-box {
-    float: right;
-    margin: 2rem 2rem 0rem 0rem;
-    background: gray;
-    color: white;
-    padding: 4rem;
-    border:1px solid gray;
-    border-radius: 15px;
-}
-
-.info-box {
-    display: inline-block;
-}
-
-.connection{
-    display: inline-block;
-}
-
-.connection-info{
-    float: right;
-}
-
-ul.tabs {
-    margin: 0px;
-    padding: 0px;
+    justify-content: space-around;
     list-style: none;
+    margin: auto;
+    padding:0;
+
 }
 
-ul.tabs li {
-    background: none;
-    color: #222;
-    display: inline-block;
-    padding: 10px 15px;
-    cursor: pointer;
+main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top:20vh;
+    width:100%;
 }
 
-ul.tabs li.current {
-    background: #ededed;
-    color: #222;
+main section{
+    margin: 2rem;
+    border: 1px solid black;
 }
 
-.tab-content {
-    display: none;
-    background: #ededed;
-    padding: 15px;
+.FAQ{
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
-.tab-content.current {
-    display: inherit;
+.awaiting{
+    height: 25vh;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
-.title{
-    text-decoration: none;
-    color: black;
+.upload{
+    height: 25vh;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
 }
-
-/* @media only screen (min-width:576px){
-
-} */

@@ -60,14 +60,14 @@ div p {
 }
 
 
-.id_password_lost {
+.id_password_lost, .login {
     text-align: right;
 }
 
-.id_password_lost a {
-
+.id_password_lost a, .login a {
     text-decoration: none;
     color: chocolate;
+    font-size: 1rem;
 }
 
 .social_login_icon {

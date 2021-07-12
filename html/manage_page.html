@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>파일 처리 페이지</title>
@@ -9,21 +9,33 @@
     <link rel="stylesheet" href="../css/manage_page.css">
 </head>
 <body>
+<nav>
+    <a href="index.html" class="logo">민원슝 PORT-MIS </a>
+
+    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+    <ul class="menu">
+        <li><a class="mypage" href="mypage_consultant.html">마이페이지</a></li>
+        <!--<li><a href="./login.html">로그인</a></li>
+            <li><a href="./signup.html">회원가입</a></li> -->
+    </ul>
+</nav>
 <section>
     <article>
         <div id="text-box">
             <div class="raw-dialogue">
-                <p class="arrow_box-consultant">상담원: 안녕하세요? PORT-MIS 상담원 이나라입니다. 무엇을 도와드릴까요?</p>
-                <p class="arrow_box-guest">장보고: 이번 새로 나온 스마트 컨테이너에 대해 여쭙고 싶습니다.
+                <p class="speech-bubble-consultant">상담원: 안녕하세요? PORT-MIS 상담원 이나라입니다. 무엇을 도와드릴까요?</p>
+                <p class="speech-bubble-guest">장보고: 이번 새로 나온 스마트 컨테이너에 대해 여쭙고 싶습니다.
                     무게 제한이나 제약 사항들이 있을까요?</p>
-                <p>상담원: 현재 무게 제한이나 다른 제약사항들은 없지만
+                <p class="speech-bubble-consultant">상담원: 현재 무게 제한이나 다른 제약사항들은 없지만
                     컨테이너 품명에 대한 검사와 내용물 확인 절차가 있다는 점 알아두시면 좋을 것 같습니다.</p>
-                <p>장보고: 아 네 알겠습니다. 감사합니다.</p>
-                <p>상담원: 네 감사합니다.</p>
+                <p class="speech-bubble-guest">장보고: 아 네 알겠습니다. 감사합니다.</p>
+                <p class="speech-bubble-consultant">상담원: 네 감사합니다.</p>
             </div>
             <div class="summary">
-                <p>질문: 스마트 컨테이너의 제한 사항 존재</p>
-                <p>답변: 없지만 컨테이너 품명과 내용물 확인 절차 존재</p>
+                <p class="speech-bubble-guest">질문: 스마트 컨테이너의 제한 사항 존재</p>
+                <p class="speech-bubble-consultant">답변: 없지만 컨테이너 품명과 내용물 확인 절차 존재</p>
             </div>
         </div>
         <div class="submit-box">
