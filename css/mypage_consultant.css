@@ -192,6 +192,14 @@ main {
     border-radius: 15px;
 }
 
+.tab-content{
+    border-radius: 0px 13px 13px 13px;
+}
+
+li {
+    border-radius: 13px 13px 0px 0px;
+}
+
 .info-box {
     display: inline-block;
 }

@@ -164,6 +164,7 @@ nav a:hover{
 
 article{
     padding: 8em 5em 5em 5em;
+    position: absolute;
 }
 
 button{
@@ -176,20 +177,28 @@ button{
     padding: 3em;
     width: 40em;
 	border-radius: 15px;
+
+    position: absolute;
+    top: 200px;
+    left: 400px;
 }
 
 .summary{
     display: inline-block;
     background-color: aliceblue;
-    padding: 3em;
+    padding: 3em 3em 1.5em 3em;
     width: 20em;
     margin-bottom: 0px;
 	vertical-align: top;
 	border-radius: 15px;
+
+    position: absolute;
+    top: 200px;
+    left: 1050px;
 }
 .submit-box{
-    text-align: right;
-    margin-right: 25rem;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .upload-div{
