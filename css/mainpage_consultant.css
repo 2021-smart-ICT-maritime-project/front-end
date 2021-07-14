@@ -226,22 +226,30 @@ main{
 main section{
     margin: 2rem;
     border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input{
+    width: 20em;
 }
 
 .FAQ{
     grid-row-start: 1;
     grid-row-end: 3;
+    margin: 2rem 2rem 2rem 10rem;
 }
 
 .awaiting{
     height: 25vh;
     grid-column-start: 2;
     grid-column-end: 3;
+    margin: 2rem 18rem 2rem 2rem;
 }
 
 .upload{
     height: 25vh;
     grid-column-start: 2;
     grid-column-end: 3;
-
+    margin: 2rem 18rem 2rem 2rem;
 }

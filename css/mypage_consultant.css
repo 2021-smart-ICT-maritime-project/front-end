@@ -192,10 +192,6 @@ main {
     border-radius: 15px;
 }
 
-.tab-content{
-    border-radius: 0px 13px 13px 13px;
-}
-
 li {
     border-radius: 13px 13px 0px 0px;
 }
@@ -205,11 +201,18 @@ li {
 }
 
 .connection{
-    display: inline-block;
+    display: inline;
 }
 
 .connection-info{
-    float: right;
+    display: inline-block;
+    margin-left: 5em;
+}
+
+.social_login_icon img {
+    width: 3rem;
+    height: 3rem;
+    margin: 1.5rem;
 }
 
 ul.tabs {
@@ -235,6 +238,7 @@ ul.tabs li.current {
     display: none;
     background: #ededed;
     padding: 15px;
+    border-radius: 0px 13px 13px 13px;
 }
 
 .tab-content.current {

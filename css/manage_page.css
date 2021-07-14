@@ -1,3 +1,11 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+p{
+    padding: 0.5em;
+}
+
 nav {
     background-color: teal;
     /* background: cadetblue; */
@@ -179,8 +187,8 @@ button{
 	border-radius: 15px;
 
     position: absolute;
-    top: 200px;
-    left: 400px;
+    top: 150px;
+    left: 420px;
 }
 
 .summary{
@@ -193,8 +201,8 @@ button{
 	border-radius: 15px;
 
     position: absolute;
-    top: 200px;
-    left: 1050px;
+    top: 170px;
+    left: 1080px;
 }
 .submit-box{
     text-align: center;
@@ -206,8 +214,7 @@ button{
 }
 
 #text-box{
-    text-align: center;
-    margin: 1em;
+
 }
 
 .speech-bubble-guest {
