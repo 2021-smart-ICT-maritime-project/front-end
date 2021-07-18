@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <nav>
-        <a href="index.html" class="logo">민원슝 PORT-MIS </a>
+<nav>
+    <a href="index.html" class="logo">민원슝 PORT-MIS </a>
 
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <span class="searches">
+    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <span class="searches">
             <input type="text" placeholder="통합검색">
 
             <span class="material-icons search">
@@ -24,35 +24,66 @@
         </span>
 
 
-
-        <ul class="menu">
-            <li>
+    <ul class="menu">
+        <li>
                 <span class="material-icons account_circle">
                     account_circle
                 </span></li>
-            <li><a class="mypage" href="#">마이페이지</a></li>
-            <li><a href="#">로그아웃</a></li>
-        </ul>
+        <li><a class="mypage" href="#">마이페이지</a></li>
+        <li><a href="#">로그아웃</a></li>
+    </ul>
 
-    </nav>
+</nav>
 
-    <header>
-        <ul>
-            <li>대기민원</li>
-            <li>녹음업로드</li>
-            <li>자주묻는질문</li>
-            <li>공지사항</li>
-            <li>민원게시판</li>
-        </ul>
-    </header>
+<header>
+    <ul><!--*하이퍼링크가 꽉 채워지지 않음-->
+        <li><a class="" href="mypage_consultant.html#awaiting">대기민원</a></li>
+        <li><a class="" href="file_upload.html">녹음업로드</a></li>
+        <li><a class="" href="FAQ.html">자주묻는질문</a></li>
+        <li><a class="" href="notice.html">공지사항</a></li>
+        <li><a class="" href="board.html">민원게시판</a></li>
+    </ul>
+</header>
 
-    <main>
-        <section class='FAQ'>자주묻는질문</section>
-        <section class='awaiting'>대기민원</section>
-        <section class="upload">녹음업로드</section>
-    </main>
+<main>
+    <section class='FAQ'>
+        <article>
+            <p class='FAQ-title'>자주 묻는 질문 <a href="FAQ.html"><img src="../img/plus.png"
+                                                                  style="width: 25px; height: 25px; padding: 0px"></a>
+            </p>
+            <div class='FAQ-box'>
+                <div class='views-questions'>조회수</div>
+                <div class='views-questions'>질문</div>
+                <p>134</p>
+                <p>선박제원을 신규로 등록하거나 변경하려면 어떻게 해야하나요?</p>
+                <p>95</p>
+                <p>비밀번호 5회 오류시 어떻게 해야하나요?</p>
+                <p>82</p>
+                <p>입출항 신고는 어떤 순서로 해야하나요?</p>
+            </div>
 
-    <footer>copyright</footer>
+        </article>
+    </section>
+    <a href="mypage_consultant.html#awaiting">
+        <section class='awaiting'>
+            <!--*하이퍼링크가 꽉 채워지지 않음-->
+            <div class='awaiting-box'>
+                <div class='awaiting-title'>대기민원</div>
+                <img src="../img/awaiting.png">
+            </div>
+        </section>
+    </a>
+    <a href="file_upload.html">
+        <section class='upload'>
+            <div class='upload-box'>
+                <div class='upload-title'>녹음 업로드</div>
+                <img src="../img/recorder.png">
+            </div>
+        </section>
+    </a>
+</main>
+
+<footer>copyright</footer>
 </body>
 
 </html>
