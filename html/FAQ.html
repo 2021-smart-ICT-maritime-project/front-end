@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../css/FAQ.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <h2>자주 묻는 질문(FAQ)</h2>
+    <p>자주 묻는 질문 목록을 확인할 수 있습니다.</p>
+    <p>그럼에도 원하는 답변을 찾지 못하셨을 경우, 민원상담을 신청하실 수 있습니다.</p>
+    <a class="btn btn-primary" href="apply.html" role="button">상담신청 바로가기</a>
+</header>
+<section>
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th scope="col">조회수</th>
+            <th scope="col">제목</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">59</th>
+            <td>
+                <a href="#" id="show" onclick="collapse()">
+                    선박제원을 신규로 등록하거나 변경하려면 어떻게 해야하나요?
+                </a>
+                <div id="hide" style="display: none">
+                    포트미스신고 - 선박운항 - 선박제원신고 화면에서 선박제원신고서 탭을 선택하여 신규/변경을 선택 한 후 호출부호를 조회하여 신고합니다.<br>
+                    신고시 선박제원을 증명할 서류를 제출해야하는데, 내항선은 국적증서를 첨부해야하며 외항선은 국제총톤수를 첨부해야합니다.
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">30</th>
+            <td>
+                <details>
+                    <summary>
+                        비밀번호 5회 오류시 어떻게 해야하나요?
+                    </summary>
+
+                    <p>
+                        아이디/비밀번호 찾기 버튼을 눌러 임시비밀번호를 발급받은 후 로그인하여 원하는 비밀번호로 변경해야합니다.<br>
+                        비밀번호를 찾기위해서는 등록시 입력한 사용자명, 휴대폰번호, 이메일 주소를 알아야하며, 모를경우 운영팀으로 연락해야합니다.
+                    </p>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">14</th>
+            <td colspan="2">
+                <details>
+                    <summary>
+                        입출항 신고는 어떤 순서로 해야하나요?
+                    </summary>
+                    <br>
+                    <p>
+                        입항신고(최초) - 항만시설사용허가신청 - 출항신고(최초) - 입항신고(최종) - 출항신고(최종) 순서로 합니다.
+                        화물 및 위험물이 존재한다면 이 또한 신고해야하며, 항만시설사용신고(화물료)도 신고해야합니다.
+                    </p>
+                </details>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+<script src="../js/FAQ.js"></script>
+</body>
+</html>

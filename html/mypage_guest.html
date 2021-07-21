@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마이페이지</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,36 +15,121 @@
     <link rel="stylesheet" href="../css/mypage_guest.css">
 </head>
 <body>
-<div class="container">
-    <ul class="tabs">
-        <li class="tab-link current" data-tab="tab-1">개인정보</li>
-        <li class="tab-link" data-tab="tab-2">대기 중인 민원</li>
-        <li class="tab-link" data-tab="tab-3">완료된 민원</li>
-        <li class="tab-link" data-tab="tab-4">기타 정보</li>
-    </ul>
 
-    <div id="tab-1" class="tab-content current">
-        <!--padding 조금 주기-->
-		<p>이름: 박정우</p>
-        <p>주소: 서울</p>
-		<p>아이디: jeong1234</p>
-        <p>비밀번호: ********</p>
-        <p>연락처: 010-7000-8000</p>
-        <p><a class="btn btn-primary" href="#.html" role="button">개인정보 수정하기</a></p>
-    </div>
-    <div id="tab-2" class="tab-content">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    <div id="tab-3" class="tab-content">
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </div>
-    <div id="tab-4" class="tab-content">
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </div>
-</div><!-- container -->
+<nav>
+    <a href="index.html" class="logo">민원슝 PORT-MIS </a>
+
+    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+    <ul class="menu">
+        <!--<li><a class="mypage" href="#">마이페이지</a></li>
+            <li><a href="./login.html">로그인</a></li>
+            <li><a href="./signup.html">회원가입</a></li> -->
+        <li><a href="#">로그아웃</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="container">
+        <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">개인정보</li>
+            <li class="tab-link" data-tab="tab-2">대기 중인 민원</li>
+            <li class="tab-link" data-tab="tab-3">완료된 민원</li>
+            <li class="tab-link" data-tab="tab-4">기타 정보</li>
+        </ul>
+
+        <div id="tab-1" class="tab-content current">
+            <!--padding 조금 주기-->
+            <div class="info-box">
+                <div class="account-image">
+                    <img class="profile" src="../img/guest1.jpg">
+                </div>
+                <p>이메일: sophy1234@kakao.com</p>
+                <p>이름: 소피</p>
+                <p>주소: 서울</p>
+                <p>비밀번호: ********</p>
+                <p>연락처: 010-1234-5000</p>
+                <p><a class="btn btn-primary" href="#.html" role="button">개인정보 수정하기</a></p>
+            </div>
+
+            <div class="question-box">
+                <p>
+                    대기민원 : 1개
+                </p>
+                <p>
+                    답변한 민원 : 1개
+                </p>
+            </div>
+            <div class="social_login_icon">
+                계정 연동<br>
+                <span class="account-image">
+                    <img src="../img/kakao.png">
+                </span>
+
+                <div class="connection">
+                    Kakao
+                </div>
+
+                <div class="connection-info">
+                    ID: sophy1234@kakao.com /
+                    Date-connected: 2020-01-21
+                </div>
+            </div>
+        </div>
+        <div id="tab-2" class="tab-content">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">민원인</th>
+                    <th scope="col">날짜</th>
+                    <th scope="col">처리 상태</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" class="title">비즈니스 패키지 회원가입 및 수정</a></td>
+                    <td>jeong1234</td>
+                    <td>2018.06.21</td>
+                    <td>
+                        <button>대기 중</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tab-3" class="tab-content">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">질문이</th>
+                    <th scope="col">날짜</th>
+                    <th scope="col">처리 상태</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" class="title">입출항 신고는 어떤 순서로 해야하나요?</a></td>
+                    <td>jeong1234</td>
+                    <td>2016.12.22</td>
+                    <td>
+                        <button>처리 완료</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tab-4" class="tab-content">
+            기타 정보
+        </div>
+    </div><!-- container -->
+</main>
 <script src="../js/jquery-3.6.0.js"></script>
 <script src="../js/mypage_guest.js"></script>
 </body>

@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+}
+
+
+header{
+    position: absolute;
+    top: 10vh;
+    left: 33vh;
+}
+
+section{
+    width: 60%;
+    position: absolute;
+    top: 35vh;
+    left: 33vh;
+}
+

@@ -244,7 +244,7 @@ main{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 0.8fr;
     position: absolute;
-    top: 24vh;
+    top: 29vh;
     left: 25vh;
     width: 77%;
     gap: 3em;
@@ -260,6 +260,7 @@ main section{
 
 input{
     width: 20em;
+    border-radius: 7px;
 }
 
 img{

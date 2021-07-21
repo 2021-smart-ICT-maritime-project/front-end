@@ -170,10 +170,6 @@ nav a:hover{
     color: white;
 }
 
-article{
-    padding: 8em 5em 5em 5em;
-    position: absolute;
-}
 
 button{
     display: inline-block;
@@ -185,10 +181,10 @@ button{
     padding: 3em;
     width: 40em;
 	border-radius: 15px;
-
     position: absolute;
     top: 150px;
     left: 420px;
+
 }
 
 .summary{
@@ -211,10 +207,6 @@ button{
 
 .upload-div{
     display: inline-block;
-}
-
-#text-box{
-
 }
 
 .speech-bubble-guest {
@@ -258,5 +250,3 @@ button{
 	margin-top: -5px;
 	margin-left: -10px;
 }
-
-
