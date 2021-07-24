@@ -1,10 +1,122 @@
-*{
+* {
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* nav */
 
+header {
+    position: absolute;
+    top: 16vh;
+    left: 33vh;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.1fr 0.9fr;
+
+    width: 60%;
+    position: absolute;
+    top: 30vh;
+    left: 33vh;
+
+    background: gainsboro;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+section > div{
+    padding-top: 0.7em;
+}
+
+.view, .title{
+    border-bottom: solid 1px gray;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.5em;
+}
+
+p{
+    text-align: left;
+}
+
+p > a{
+    margin-top: 1em;
+
+    display: block;
+
+    text-decoration: none;
+    color: #56917a;
+}
+
+p > a:hover{
+    color: #ededed;
+}
+
+pre{
+    text-align: left;
+}
+
+/*Collapse 구현*/
+
+details {
+    margin: 5px 0 10px;
+}
+
+details > summary {
+    background: #444;
+    color: #fff;
+    padding: 10px;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.5s;
+    text-align: left;
+    box-shadow: 1px 1px 2px gray;
+}
+
+details > summary::-webkit-details-marker {
+    background: #444;
+    color: #fff;
+    background-size: contain;
+    transform: rotate3d(0, 0, 1, 90deg);
+    transition: transform 0.25s;
+}
+
+details[open] > summary::-webkit-details-marker {
+    transform: rotate3d(0, 0, 1, 180deg);
+}
+
+details[open] > summary {
+    background: #444;
+}
+
+details[open] > summary ~ * {
+    animation: reveal 0.5s;
+}
+
+.tpt {
+    background: #444;
+    color: #fff;
+    margin: 5px 0 10px;
+    padding: 5px 10px;
+    line-height: 25px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px gray;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* nav */
 nav {
     background-color: teal;
     /* background: cadetblue; */
@@ -167,108 +279,4 @@ nav a {
 
 nav a:hover{
     color: white;
-}
-
-/* page */
-
-body {
-    margin-top: 0px;
-    line-height: 1.6;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.container {
-    width: 1600px;
-    margin: 120px auto;
-    flex: auto;
-    position: absolute;
-    top: 0.1vh
-}
-
-.question-box {
-    float: right;
-    margin: 2rem 2rem 0rem 0rem;
-    background: gray;
-    color: white;
-    padding: 4rem;
-    border:1px solid gray;
-    border-radius: 15px;
-}
-
-li {
-    border-radius: 13px 13px 0px 0px;
-}
-
-.info-box {
-    display: inline-block;
-}
-
-.connection{
-    display: inline;
-}
-
-.connection-info{
-    display: inline-block;
-    margin-left: 5em;
-}
-
-.social_login_icon img {
-    width: 3rem;
-    height: 3rem;
-    margin: 1.5rem;
-}
-
-ul.tabs {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
-
-ul.tabs li {
-    background: none;
-    color: #222;
-    display: inline-block;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-ul.tabs li.current {
-    background: #ededed;
-    color: #222;
-}
-
-.tab-content {
-    display: none;
-    background: #ededed;
-    padding: 15px;
-    border-radius: 0px 13px 13px 13px;
-}
-
-.tab-content.current {
-    display: inherit;
-}
-
-.title{
-    text-decoration: none;
-    color: black;
-}
-
-.account-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 70%;
-    overflow: hidden;
-    margin: 1em;
-}
-.profile {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }

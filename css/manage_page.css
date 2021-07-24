@@ -2,9 +2,7 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-p{
-    padding: 0.5em;
-}
+/* nav */
 
 nav {
     background-color: teal;
@@ -170,6 +168,11 @@ nav a:hover{
     color: white;
 }
 
+/* page */
+
+p{
+    padding: 0.5em;
+}
 
 button{
     display: inline-block;

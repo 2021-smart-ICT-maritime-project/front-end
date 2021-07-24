@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* nav */
@@ -195,13 +196,14 @@ nav a {
     font-weight: bold;
     color: white;
     background: teal;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 header a{
     display: block;
     text-decoration: none;
     color: #56917a;
+    font-size: 1.1em;
 }
 
 header a:hover,
@@ -272,6 +274,10 @@ img{
 
 div > p{
     padding: 0.3em;
+}
+
+article div p{
+    font-size: 1.1em;
 }
 
 .FAQ{
