@@ -1,17 +1,45 @@
 /* Common */
 
 * {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body{
+  overflow:hidden;
+  background-color:#000;
 }
 
 main span {
   font-size: 2em;
-  color: chocolate;
+  color: gainsboro;
 }
 
 main .what-is-soong {
   font-size: 2.5em;
-  color: teal;
+  color: deepskyblue;
+}
+
+main > div > p {
+  position: fixed;
+  text-align: left;
+  top: 34vh;
+  left: 15vh;
+  color: white;
+  border-radius: 10px;
+  background-color: rgba( 0, 0, 0, 0.6 );
+  padding: 10px;
+}
+
+
+.title {
+  position: fixed;
+  text-align: left;
+  top: 18vh;
+  left: 15vh;
+  color: beige;
+  font-size: 4em;
 }
 
 /* 
@@ -197,26 +225,6 @@ a {
   border-radius: 15px;
 }
 
-
-main p {
-  position: fixed;
-  text-align: left;
-  top: 34vh;
-  left: 15vh;
-}
-
-
-.title {
-  position: fixed;
-  text-align: left;
-  top: 18vh;
-  left: 15vh;
-  right: 0;
-  bottom: 0;
-  color: #56917a;
-  font-size: 4em;
-}
-
 .main-title {
   display: inline-block;
 }
@@ -227,6 +235,8 @@ nav {
 
 
 /* youtube player 관련 css */
+
+
 /* #player{
   opacity: 0.5;
   width:100%;

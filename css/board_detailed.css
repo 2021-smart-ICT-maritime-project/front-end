@@ -1,5 +1,6 @@
-*{
+* {
     margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 header {
@@ -24,7 +25,7 @@ section {
     text-align: left;
 }
 
-section > div{
+section > div {
     background: #444;
     color: #fff;
     padding: 10px;
@@ -36,11 +37,11 @@ section > div{
     box-shadow: 1px 1px 2px gray;
 }
 
-section > p{
+section > p {
     margin-top: 28px;
 }
 
-section > p > a{
+section > p > a {
     margin-top: 1em;
 
     display: block;
@@ -49,6 +50,101 @@ section > p > a{
     color: #56917a;
 }
 
+article {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 25px 10px 25px;
+}
+
+article > p {
+    padding: 0.5em;
+}
+
+/* bubble */
+.speech-bubble-guest {
+    position: relative;
+    background: #a5cae2;
+    border-radius: .4em;
+    margin-left: auto;
+}
+
+.speech-bubble-guest:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left-color: #a5cae2;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -5px;
+    margin-right: -10px;
+}
+
+.speech-bubble-consultant {
+    position: relative;
+    background: #9de3d5;
+    border-radius: .4em;
+    margin-right: auto;
+}
+
+.speech-bubble-consultant:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-color: #9de3d5;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -5px;
+    margin-left: -10px;
+}
+
+.question{
+    position: relative;
+    background: #fccd7c;
+    border-radius: .4em;
+    margin-left: auto;
+}
+
+.question:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left-color: #fccd7c;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -5px;
+    margin-right: -10px;
+}
+
 .answer{
-    margin: 20px 20px 60px 20px;
+position: relative;
+    background: #f7f7eb;
+    border-radius: .4em;
+    margin-right: auto;
+}
+
+.answer:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-color: #f7f7eb;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -5px;
+    margin-left: -10px;
 }
