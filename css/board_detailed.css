@@ -3,27 +3,64 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-header {
-    position: absolute;
-    top: 16vh;
-    left: 40vh;
+@media screen and (min-width: 768px) {
+    header {
+        position: absolute;
+        top: 16%;
+        left: 21%;
+    }
+
+    section {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.2fr 0.8fr;
+
+        width: 60%;
+        position: absolute;
+        top: 26%;
+        left: 20%;
+
+        background: gainsboro;
+        border-radius: 10px;
+
+        text-align: left;
+    }
+
+
+section > p {
+    margin-top: 28px;
+}
 }
 
-section {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 0.2fr 0.8fr;
+@media screen and (max-width: 767px) {
+    header {
+        position: absolute;
+        top: 4%;
+        left: 10%;
+    }
 
-    width: 60%;
-    position: absolute;
-    top: 30vh;
-    left: 40vh;
+    section {
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-columns: 1fr;
 
-    background: gainsboro;
-    border-radius: 10px;
+        width: 90%;
+        position: absolute;
+        top: 15vh;
+        left: 5vh;
 
-    text-align: left;
+        background: gainsboro;
+        border-radius: 10px;
+
+        text-align: left;
+    }
+
+
+section > p {
+    margin: 0px 20px 0px 20px;
 }
+}
+
 
 section > div {
     background: #444;
@@ -35,10 +72,6 @@ section > div {
     transition: background 0.5s;
     text-align: left;
     box-shadow: 1px 1px 2px gray;
-}
-
-section > p {
-    margin-top: 28px;
 }
 
 section > p > a {
@@ -105,14 +138,14 @@ article > p {
     margin-left: -10px;
 }
 
-.question{
+.question {
     position: relative;
     background: #fccd7c;
     border-radius: .4em;
     margin-left: auto;
 }
 
-.question:after{
+.question:after {
     content: '';
     position: absolute;
     right: 0;
@@ -127,14 +160,14 @@ article > p {
     margin-right: -10px;
 }
 
-.answer{
-position: relative;
+.answer {
+    position: relative;
     background: #f7f7eb;
     border-radius: .4em;
     margin-right: auto;
 }
 
-.answer:after{
+.answer:after {
     content: '';
     position: absolute;
     left: 0;

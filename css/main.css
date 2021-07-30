@@ -8,7 +8,9 @@
 
 body{
   overflow:hidden;
-  background-color:#000;
+  /* background-color 문제 해결 위해 주석처리 하겠슴다 */
+  /* background-color:#000; */
+
 }
 
 main span {
@@ -38,24 +40,15 @@ main > div > p {
   text-align: left;
   top: 18vh;
   left: 15vh;
-  color: beige;
+  color: #2471A3;
   font-size: 4em;
 }
 
-/* 
-header {
-    display: flex;
-    justify-content: space-between;
-    background: cadetblue;
-    padding: 20px;
-    color: white;
-} */
 
 /* nav */
 
 nav {
   background-color: teal;
-  /* background: cadetblue; */
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
   position: fixed;
   width: 100%;
@@ -256,4 +249,24 @@ nav {
   main p{
     left:0;
   }
+}
+
+
+.video-div{
+  display: inline-block; 
+  padding: 0;            
+  margin: 0;
+  width: 100%;           
+  padding-top: 56.25%;   /*56.25%*/
+  height: 0px;          
+  position: relative;
+  background-color: black;
+}
+
+.video-div > video {
+  position: absolute;    
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
 }
