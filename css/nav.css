@@ -1,14 +1,7 @@
-*{
-    margin: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-/* nav */
-
 nav {
     background-color: teal;
     /* background: cadetblue; */
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 1);
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -96,24 +89,24 @@ nav .menu-btn {
     display: none;
 }
 
-nav .menu-btn:checked~.menu {
+nav .menu-btn:checked ~ .menu {
     max-height: 240px;
 }
 
-nav .menu-btn:checked~.menu-icon .navicon {
+nav .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
 }
 
-nav .menu-btn:checked~.menu-icon .navicon:before {
+nav .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
 }
 
-nav .menu-btn:checked~.menu-icon .navicon:after {
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
 }
 
-nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
 }
 
@@ -142,7 +135,7 @@ nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
 }
 
 /* 최대 767px 까지 */
-@media (max-width:767px) {
+@media (max-width: 767px) {
     nav li a {
         padding: 7px 20px;
     }
@@ -150,6 +143,7 @@ nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
     nav .logo {
         font-size: 1rem;
     }
+
 }
 
 nav a {
@@ -162,21 +156,8 @@ nav a {
     color: white;
     background: teal;
     border-radius: 15px;
-  }
+}
 
-nav a:hover{
+nav a:hover {
     color: white;
-}
-  
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-}
-
-h1 {
-    text-align: center;
 }

@@ -8,6 +8,7 @@
         position: absolute;
         top: 16%;
         left: 21%;
+        bottom: 30%;
     }
 
     section {
@@ -17,7 +18,7 @@
 
         width: 60%;
         position: absolute;
-        top: 36%;
+        top: 39%;
         left: 21%;
 
         background: gainsboro;
@@ -53,7 +54,6 @@
         font-size: 0.9em;
     }
 }
-
 
 section > div {
     padding-top: 0.7em;
@@ -152,7 +152,6 @@ nav ul {
 nav li a {
     display: block;
     padding: 20px 20px;
-    border: 1px solid #f4f4f4;
     text-decoration: none;
 }
 
