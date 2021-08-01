@@ -10,7 +10,6 @@ body {
     overflow: hidden;
     /* background-color 문제 해결 위해 주석처리 하겠슴다 */
     /* background-color:#000; */
-
 }
 
 main span {
@@ -43,6 +42,7 @@ main .what-is-soong {
         left: 15vh;
         color: #2471A3;
         font-size: 4em;
+        text-shadow: 2px 2px 3px black;
     }
 }
 
@@ -67,156 +67,10 @@ main .what-is-soong {
         left: 15vh;
         color: #2471A3;
         font-size: 4em;
+        text-shadow: 2px 2px 3px black;
     }
 }
 
-
-/* nav */
-
-nav {
-    background-color: teal;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 1);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-    font-size: 15px;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: teal;
-}
-
-nav li a {
-    display: block;
-    padding: 20px 20px;
-    text-decoration: none;
-}
-
-nav li a:hover,
-nav .menu-btn:hover {
-    opacity: 0.8;
-
-}
-
-nav .logo {
-    display: block;
-    float: left;
-    font-size: 2em;
-    padding: 16px 20px;
-    text-decoration: none;
-}
-
-/* menu */
-
-nav .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-}
-
-/* menu icon */
-
-nav .menu-icon {
-    cursor: pointer;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-}
-
-nav .menu-icon .navicon {
-    background: cornsilk;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: 0.2s ease-out;
-    width: 18px;
-}
-
-nav .menu-icon .navicon:before,
-nav .menu-icon .navicon:after {
-    background: cornsilk;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-nav .menu-icon .navicon:before {
-    top: 5px;
-}
-
-nav .menu-icon .navicon:after {
-    top: -5px;
-}
-
-/* menu btn */
-
-nav .menu-btn {
-    display: none;
-}
-
-nav .menu-btn:checked ~ .menu {
-    max-height: 240px;
-}
-
-nav .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-}
-
-nav .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-}
-
-nav .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-}
-
-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-}
-
-/* 48em = 768px */
-
-/* 최소 768px 부터 */
-@media (min-width: 768px) {
-    nav li {
-        float: left;
-    }
-
-    nav li a {
-        padding: 25px 20px;
-    }
-
-    nav .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-
-    nav .menu-icon {
-        display: none;
-    }
-
-}
-
-/* 최대 767px 까지 */
-@media (max-width: 767px) {
-    nav li a {
-        padding: 7px 20px;
-    }
-
-    nav .logo {
-        font-size: 1rem;
-    }
-}
 
 footer {
     position: fixed;
@@ -229,18 +83,6 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-a {
-    display: block;
-    text-align: center;
-    margin: .25rem;
-    padding: .5rem 1rem;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    background: teal;
-    border-radius: 15px;
 }
 
 .main-title {
@@ -283,16 +125,11 @@ nav {
     padding: 0;
     margin: 0;
     width: 100%;
-    padding-top: 56.25%; /*56.25%*/
     height: 0px;
     position: relative;
-    background-color: black;
-}
-
-.video-div > video {
-    position: absolute;
-    top: 175px;
+    top: 7vh;
     left: 0px;
     right: 0px;
     bottom: 0px;
+    background-color: black;
 }

@@ -1,6 +1,15 @@
-body {
+body,html {
     overflow: auto;
     margin: 0;
+    height: 100%;
+}
+
+.background-img{
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 footer {
@@ -46,12 +55,6 @@ p {
     text-decoration: none;
 }
 
-
-/* .btn-grad {
-    
-    margin: auto;
-} */
-
 .id_password_lost,
 .sign_up {
     text-align: right;
@@ -64,8 +67,12 @@ p {
     color: chocolate;
 }
 
+.social_login{
+    color:white;
+}
+
 .social_login_icon {
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .social_login_icon {
