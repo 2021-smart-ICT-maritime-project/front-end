@@ -3,18 +3,25 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-/*nav*/
-
-
-/*page*/
+.background-img{
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 main a {
-    color: #56917a;
+    color: white;
     text-decoration: none;
 }
 
 main a:hover {
     opacity: 0.8;
+}
+
+.phone-num{
+    color:white;
 }
 
 @media screen and (min-width: 768px) {
@@ -31,7 +38,7 @@ main a:hover {
     }
 
     section {
-        border: 3px solid #56917a;
+        border: 3px solid white;
         border-radius: 10px;
         text-align: center;
         padding: 2em;
@@ -69,7 +76,7 @@ main a:hover {
 
 
     section {
-        border: 3px solid #56917a;
+        border: 3px solid white;
         border-radius: 10px;
         text-align: center;
         padding: 2em;

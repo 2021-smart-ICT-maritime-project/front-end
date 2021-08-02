@@ -17,12 +17,12 @@
   <link rel="stylesheet" href="../css/file_upload.css">
 </head>
 
-<body>
+<body class="background-img">
   <nav>
     <a href="index.html" class="logo">민원슝 PORT-MIS </a>
 
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
     <ul class="menu">
       <li><a class="mypage" href="#">마이페이지</a></li>
@@ -32,13 +32,17 @@
     </ul>
   </nav>
   <main>
-    <h1>녹음파일을 업로드해주세요</h1>
-    <br>
-    <div class="mb-3">
-      <!-- <label for="formFileMultiple" class="form-label">녹음 파일 업로드하기</label> -->
-      <input class="form-control" type="file" id="formFileMultiple" multiple>
+    <div class="wrap">
+      <h1>녹음파일을 업로드해주세요</h1>
+      <br>
+      <div class="mb-3">
+        <!-- <label for="formFileMultiple" class="form-label">녹음 파일 업로드하기</label> -->
+        <input class="form-control" type="file" id="formFileMultiple" multiple>
+      </div>
+      <div class="save">
+        <button type="button" class="btn btn-primary" onclick="upload()">저장하기</button>
+      </div>
     </div>
-    <button type="button" class="btn btn-primary" onclick="upload()">저장하기</button>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>

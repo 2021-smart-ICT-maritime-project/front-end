@@ -1,8 +1,15 @@
 body {
     overflow: auto;
     margin: 0;
-    background-color: #e1f4f5;
-    /*배경에 색깔 넣으면 좋을 것 같은데 적용이 안되네*/
+    /*배경에 색깔 넣으면 좋을 것 같은데 적용이 안되네 -> 사진으로 대체하겠슴당~*/
+}
+
+.background-img{
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 footer {
@@ -31,8 +38,12 @@ div p {
 .wrap {
     width: 20rem;
     margin: 5rem auto;
+    color: white;
 }
 
+.sub{
+    color:beige;
+}
 
 .btn-grad {
     background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%)
@@ -70,8 +81,12 @@ div p {
     font-size: 1rem;
 }
 
+.social_login{
+    color:white;
+}
+
 .social_login_icon {
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .social_login_icon {
@@ -106,6 +121,5 @@ div p {
 }
 
 #verifyPhoneButton {
-    display: inline-block;
     float: right;
 }

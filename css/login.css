@@ -12,6 +12,10 @@ body,html {
     background-repeat: no-repeat;
 }
 
+.bg-color{
+    background-color: white;
+}
+
 footer {
     /* position: fixed; */
     top: 95vh;
@@ -29,6 +33,8 @@ p {
 .wrap {
     width: 20rem;
     margin: 5rem auto;
+    padding:1.5rem;
+    border-radius:10px;
 }
 
 .btn-grad {
@@ -68,7 +74,7 @@ p {
 }
 
 .social_login{
-    color:white;
+    color:black;
 }
 
 .social_login_icon {

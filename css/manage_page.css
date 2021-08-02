@@ -2,7 +2,12 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* page */
+.background-img{
+    background-image: url("../img/bg.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 p{
     padding: 0.5em;
