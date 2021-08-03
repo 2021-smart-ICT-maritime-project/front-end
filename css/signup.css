@@ -10,6 +10,7 @@ body {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 footer {
@@ -20,15 +21,6 @@ footer {
 
 h1 {
     text-align: center;
-}
-
-p {
-    margin: 0.25rem;
-}
-
-div p {
-    color: gray;
-    font-size: 0.5em;
 }
 
 .inputYearMonthDay {
@@ -43,6 +35,13 @@ div p {
 
 .sub{
     color:beige;
+    font-size: 0.6em;
+    margin: 0;
+}
+
+.error_next_box{
+    color: red;
+    font-size: 0.6em;
 }
 
 .btn-grad {
@@ -79,6 +78,10 @@ div p {
     text-decoration: none;
     color: chocolate;
     font-size: 1rem;
+}
+
+.id_password_lost a:hover, .login a:hover {
+    color: #bfe9ff ;
 }
 
 .social_login{
