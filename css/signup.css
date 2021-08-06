@@ -10,6 +10,7 @@ body {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 footer {
@@ -22,15 +23,6 @@ h1 {
     text-align: center;
 }
 
-p {
-    margin: 0.25rem;
-}
-
-div p {
-    color: gray;
-    font-size: 0.5em;
-}
-
 .inputYearMonthDay {
     display: inline-block;
 }
@@ -38,11 +30,21 @@ div p {
 .wrap {
     width: 20rem;
     margin: 5rem auto;
-    color: white;
+    border-radius:10px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    padding: 1.5em;
 }
 
 .sub{
-    color:beige;
+    color:gray;
+    font-size: 0.6em;
+    margin: 0;
+}
+
+.error_next_box{
+    color: red;
+    font-size: 0.6em;
 }
 
 .btn-grad {
@@ -50,7 +52,6 @@ div p {
 }
 
 .btn-grad {
-    margin: 10px;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
@@ -81,8 +82,12 @@ div p {
     font-size: 1rem;
 }
 
+.id_password_lost a:hover, .login a:hover {
+    color: #bfe9ff ;
+}
+
 .social_login{
-    color:white;
+
 }
 
 .social_login_icon {
@@ -99,7 +104,6 @@ div p {
     height: 3rem;
     margin: 1.5rem;
 }
-
 #inputYear {
     display: inline-block;
     width: 40%;
@@ -117,9 +121,10 @@ div p {
 
 #inputPhone {
     display: inline-block;
-    width: 55%;
+    width: 65%;
 }
 
 #verifyPhoneButton {
+    display: inline-block;
     float: right;
 }

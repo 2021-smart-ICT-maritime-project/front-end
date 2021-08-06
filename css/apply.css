@@ -24,7 +24,7 @@ main a:hover {
     color:white;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -46,7 +46,7 @@ main a:hover {
 
     p {
         font-weight: bold;
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     div {
@@ -63,14 +63,15 @@ main a:hover {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     main {
         display: grid;
         grid-template-rows: 1fr 1fr;
         position: absolute;
-        top: 30%;
-        left: 18%;
+        left:44%;
+        top: 50%;
+        transform: translate(-50%, -50%); 
         gap: 10%;
     }
 
@@ -79,13 +80,12 @@ main a:hover {
         border: 3px solid white;
         border-radius: 10px;
         text-align: center;
-        padding: 2em;
+        padding: 2rem;
         width: 90%;
-        height: 60%;
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 
     img {

@@ -8,14 +8,16 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
-
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-
 header {
-    position: absolute;
-    top: 16vh;
-    left: 33vh;
+    /* position: absolute;
+    top: 19%;
+    left: 20%; */
+    color: white;
+    margin-left: 1rem;
 }
 
 section {
@@ -23,13 +25,14 @@ section {
     grid-template-rows: 1fr;
     grid-template-columns: 0.1fr 0.9fr;
 
-    width: 60%;
-    position: absolute;
-    top: 30vh;
-    left: 33vh;
+    width: 100%;
+    /* position: absolute;
+    top: 30%;
+    left: 20%; */
 
-    background: gainsboro;
+    background: white;
     border-radius: 10px;
+    border: 1px solid gainsboro;
 
     text-align: center;
 }
@@ -72,7 +75,7 @@ details {
 }
 
 details > summary {
-    background: #444;
+    background: #2471A3;
     color: #fff;
     padding: 10px;
     outline: 0;
@@ -81,6 +84,7 @@ details > summary {
     transition: background 0.5s;
     text-align: left;
     box-shadow: 1px 1px 2px gray;
+    margin-right: 3%;
 }
 
 details > summary::-webkit-details-marker {
@@ -96,7 +100,7 @@ details[open] > summary::-webkit-details-marker {
 }
 
 details[open] > summary {
-    background: #444;
+    background: #2d8ecd;
 }
 
 details[open] > summary ~ * {
@@ -122,4 +126,10 @@ details[open] > summary ~ * {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    transform:translate(0%,45%);
 }

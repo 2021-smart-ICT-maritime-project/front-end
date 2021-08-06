@@ -7,6 +7,8 @@
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+	background-attachment: fixed;
+	/*background-size: cover;*/
 }
 
 p{
@@ -20,10 +22,11 @@ button{
 .raw-dialogue{
     display: flex;
     flex-direction: column;
-    background-color: #ededed;
+    background: white;
     padding: 3em;
     width: 40em;
 	border-radius: 15px;
+	border: 1px solid gainsboro;
     position: absolute;
     top: 150px;
     left: 420px;
@@ -33,12 +36,13 @@ button{
 .summary{
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
+    background: aliceblue;
     padding: 3em 3em 1.5em 3em;
     width: 20em;
     margin-bottom: 0px;
 	vertical-align: top;
 	border-radius: 15px;
+	border: 1px solid gainsboro;
 
     position: absolute;
     top: 170px;

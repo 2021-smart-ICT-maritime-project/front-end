@@ -1,35 +1,31 @@
 * {
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
-    
+
 }
 
-.searches{
+.searches {
     position: fixed;
-    top : 1.75rem;
-    left:40vw;
+    top: 1.75rem;
+    left: 40vw;
     display: flex;
-    color:white;
+    color: white;
     cursor: pointer;
 }
 
-.background-img{
+.background-img {
     background-image: url("../img/bg.png");
     background-size: cover;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-@media only screen and (max-width:784px) {
-    .searches{
-        display:none;
+@media only screen and (max-width: 784px) {
+    .searches {
+        display: none;
     }
-}
-footer {
-    position: fixed;
-    top: 95vh;
-    left: 10vh;
 }
 
 .menu {
@@ -45,7 +41,7 @@ footer {
     margin: 1rem;
 }
 
-header a{
+header a {
     display: block;
     text-decoration: none;
     color: white;
@@ -53,103 +49,77 @@ header a{
 }
 
 header a:hover,
-header ul li:hover{
+header ul li:hover {
     opacity: 0.8;
     color: #bfe9ff;
 }
 
-header{
-    position: absolute;
-    top:15vh;
-    width:100%;
-}
-
-header ul{
+header ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     margin: auto;
-    padding:0;
+    padding: 0;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 1);
 }
 
-header ul li{
-    padding: 1em;
-    border-radius: 10px;
-}
 
-main a{
+main a {
     display: inline-block;
     text-decoration: none;
-    color: white;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
 }
 
 main a:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
-main{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 0.8fr;
-    position: absolute;
-    top: 29vh;
-    left: 25vh;
-    width: 77%;
-    gap: 3em;
 
-}
-
-main section{
+main section {
     /*margin: 2rem;*/
-    border: 3px solid white;
-    border-radius: 10px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
     text-align: center;
 }
 
-input{
+input {
     width: 20em;
     border-radius: 7px;
 }
 
-img{
+img {
     /*display: flex;*/
     /*align-items: center;*/
     /*justify-content: center;*/
+    width: 50%;
+    height: 100%;
     padding: 0px 50px;
 }
 
-div > p{
-    padding: 0.3em;
-}
-
-article div p{
-    font-size: 1.1em;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.FAQ{
+.FAQ {
     grid-row-start: 1;
     grid-row-end: 3;
     /*margin: 2rem 2rem 2rem 14rem;*/
+    /*항목 더 많아지면 틀이 깨짐*/
 }
 
-.FAQ-title{
+.FAQ-title {
     font-size: 2em;
     font-weight: bold;
     text-align: left;
     margin: 0.6em 1em;
-    color: white;
 }
 
-.FAQ-box{
+.FAQ-box {
     display: grid;
     grid-template-columns: 150px 1fr;
     row-gap: 10px;
 }
 
-.awaiting-title{
+.awaiting-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,13 +127,7 @@ article div p{
     font-weight: bold;
 }
 
-.awaiting-box{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: fill;
-}
-
-.upload-title{
+.upload-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,27 +135,147 @@ article div p{
     font-weight: bold;
 }
 
-.upload-box{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
-.views-questions{
-    border-bottom: 2px solid white;
+.views-questions {
+    border-bottom: 2px solid gray;
     background-color: white;
-    border-radius: 30px;
+    padding-bottom: 10px;
+    /*border-radius: 50px;*/
 }
 
-.awaiting{
-    height: 25vh;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    /*margin: 2rem 18rem 2rem 2rem;*/
+
+@media screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 0.8fr;
+        position: absolute;
+        top: 28%;
+        left: 11%;
+        width: 77%;
+        gap: 3em;
+    }
+
+    header {
+        position: absolute;
+        top: 15vh;
+        width: 100%;
+    }
+
+    header ul li {
+        padding: 1em;
+        border-radius: 10px;
+    }
+
+    article div p {
+        font-size: 1.1em;
+        background-color: white;
+        border-radius: 10px;
+        padding: 0.6em;
+    }
+
+    .awaiting {
+        height: 25vh;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        /*margin: 2rem 18rem 2rem 2rem;*/
+    }
+
+    .upload {
+        height: 25vh;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        /*margin: 2rem 18rem 2rem 2rem;*/
+    }
+
+    .awaiting-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        top: 10%;
+        left: 2%
+    }
+
+    .upload-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        top: 10%;
+        left: 2%
+    }
+
+    footer {
+        position: absolute;
+        top: 90%;
+        left: 11%;
+    }
 }
 
-.upload{
-    height: 25vh;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    /*margin: 2rem 18rem 2rem 2rem;*/
+@media screen and (max-width: 767px) {
+    main {
+        display: grid;
+        grid-template-rows: 0.7fr 0.3fr 0.3fr;
+        grid-template-columns: 1fr;
+        position: absolute;
+        top: 23%;
+        left: 5%;
+        width: 91%;
+        gap: 3%;
+    }
+
+    header {
+        position: absolute;
+        top: 11vh;
+        width: 100%;
+    }
+
+    header ul li {
+        padding: 1em;
+        border-radius: 10px;
+        font-size: 0.88em;
+    }
+
+    article div p {
+        font-size: 0.9em;
+        background-color: white;
+        border-radius: 10px;
+        padding: 0.3em;
+    }
+
+    div > .qlist {
+        text-align: left;
+    }
+
+    .awaiting {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        /*margin: 2rem 18rem 2rem 2rem;*/
+    }
+
+    .upload {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        /*margin: 2rem 18rem 2rem 2rem;*/
+    }
+
+    .awaiting-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        top: 10%;
+    }
+
+    .upload-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        top: 10%;
+    }
+
+    footer {
+        position: absolute;
+        top: 89%;
+        left: 9%;
+    }
 }
+

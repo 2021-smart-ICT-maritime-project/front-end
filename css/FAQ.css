@@ -9,58 +9,7 @@
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 768px) {
-    header {
-        position: absolute;
-        top: 16%;
-        left: 21%;
-        bottom: 30%;
-    }
-
-    section {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 0.1fr 0.9fr;
-
-        width: 60%;
-        position: absolute;
-        top: 39%;
-        left: 21%;
-
-        background: gainsboro;
-        border-radius: 10px;
-
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    header {
-        position: absolute;
-        top: 16%;
-        left: 3%;
-        margin-right: 11%;
-    }
-
-    section {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 0.1fr 0.9fr;
-
-        width: 94%;
-        position: absolute;
-        top: 43%;
-        left: 3%;
-
-        background: gainsboro;
-        border-radius: 10px;
-
-        text-align: center;
-
-        font-size: 0.9em;
-    }
+    background-attachment: fixed;
 }
 
 section > div {
@@ -71,6 +20,29 @@ section > div {
     border-bottom: solid 1px gray;
     margin-bottom: 0.3em;
     padding-bottom: 0.5em;
+}
+
+button {
+    height: 2em;
+    width: 10em;
+    font-size: 1em;
+    color: #fff;
+    background: #004fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+    transition: 0.3s;
+    position: relative;
+    top: 6%;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    background: rgba(0, 109, 255, 0.9);
+    cursor: pointer;
 }
 
 p {
@@ -85,7 +57,7 @@ details {
 }
 
 details > summary {
-    background: #444;
+    background: #2471A3;
     color: #fff;
     padding: 10px;
     outline: 0;
@@ -110,7 +82,7 @@ details[open] > summary::-webkit-details-marker {
 }
 
 details[open] > summary {
-    background: #444;
+    background: #2d8ecd;
 }
 
 details[open] > summary ~ * {
@@ -135,5 +107,58 @@ details[open] > summary ~ * {
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        position: absolute;
+        top: 16%;
+        left: 21%;
+        bottom: 30%;
+    }
+
+    section {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.1fr 0.9fr;
+
+        width: 60%;
+        position: absolute;
+        top: 39%;
+        left: 21%;
+
+        background: white;
+        border: 1px solid gainsboro;
+        border-radius: 10px;
+
+        text-align: center;
+    }
+}
+
+@media screen and (min-width : 320px) and (max-width: 767px) {
+    header {
+        position: absolute;
+        top: 16%;
+        left: 3%;
+        margin-right: 11%;
+    }
+
+    section {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.1fr 0.9fr;
+        width: 94%;
+        position: absolute;
+        top: 47%;
+        left: 3%;
+        background: white;
+        border: 1px solid gainsboro;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    button{
+        transform: translate(0%, 30%);
     }
 }
