@@ -13,11 +13,17 @@
 }
 
 header {
+<<<<<<< HEAD
     /* position: absolute;
     top: 19%;
     left: 20%; */
     color: white;
     margin-left: 1rem;
+=======
+    position: absolute;
+    top: 19%;
+    left: 20%;
+>>>>>>> 4d0b9f646e5daaabe4919324b8c2daf105bce6da
 }
 
 section {
@@ -25,10 +31,17 @@ section {
     grid-template-rows: 1fr;
     grid-template-columns: 0.1fr 0.9fr;
 
+<<<<<<< HEAD
     width: 100%;
     /* position: absolute;
     top: 30%;
     left: 20%; */
+=======
+    width: 60%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+>>>>>>> 4d0b9f646e5daaabe4919324b8c2daf105bce6da
 
     background: white;
     border-radius: 10px;

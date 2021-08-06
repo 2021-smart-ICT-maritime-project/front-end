@@ -37,7 +37,11 @@ h1 {
 }
 
 .sub{
+<<<<<<< HEAD
     color:gray;
+=======
+    color:beige;
+>>>>>>> 4d0b9f646e5daaabe4919324b8c2daf105bce6da
     font-size: 0.6em;
     margin: 0;
 }
