@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
+    
 }
 
 .background-img {
@@ -14,28 +15,23 @@
 
 
 header {
-    /* position: absolute; */
-    /* top: 16vh; */
-    /* left: 33vh; */
     color:white;
-    transform: translate(0%,0%);
-    margin-left: 1rem;
+    position: absolute;
+    top:18vh;
 }
 
 section {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 0.15fr 0.65fr 0.1fr 0.05fr 0.1fr;
-    width: 100%;
-    /* position: absolute; */
-    /* top: 30vh; */
-    /* left: 33vh; */
-
+    width: 60%;
     background: white;
     border-radius: 10px;
     border: 1px solid gainsboro;
-
     text-align: center;
+    position: absolute;
+    top:34vh;
+    left:22vw;
 }
 
 section > div {
@@ -54,9 +50,7 @@ p {
 
 p > a {
     margin-top: 1em;
-
     display: block;
-
     text-decoration: none;
     color: #56917a;
 }
@@ -68,14 +62,6 @@ p > a:hover {
 pre {
     text-align: left;
 }
-
-/*section > button{*/
-/*    position: relative;*/
-/*    top: 0.5em;*/
-/*    left: 1.4em;*/
-
-/*    text-align: center;*/
-/*}*/
 
 /* Collapse 구현 */
 
@@ -166,4 +152,61 @@ button:hover {
     display: flex;
     flex-direction: column;
     transform:translate(0%,45%);
+}
+
+@media screen and (max-width:1400px) {
+    section {
+        width : 85%;
+        left: 9%;
+    }
+}
+
+@media screen and (max-width:988px) {
+    section {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.15fr 0.8fr 0.33fr 0.17fr 0.2fr;
+        width: 91%;
+        background: white;
+        border-radius: 10px;
+        border: 1px solid gainsboro;
+        text-align: center;
+        position: absolute;
+        top:34vh;
+        left:5%;
+    }
+
+    button {
+        height: 2em;
+        width: 3.7em;
+        font-size: 1em;
+        color: #fff;
+        background: #004fff;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+        transition: 0.3s;
+        position: relative;
+        left: 50%;
+        top: 26px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+    header{
+        margin-left:6%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1400px){
+    header{
+        margin-left : 9%;
+    }
+}
+
+@media screen and (min-width:1401px) {
+    header{
+        margin-left : 22%;
+    }
 }

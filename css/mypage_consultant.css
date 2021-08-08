@@ -104,6 +104,21 @@ ul.tabs li.current {
     object-fit: cover;
 }
 
-/* @media only screen (min-width:576px){
+@media screen and (max-width:576px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: -0.1fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        width: 100%
+    }
 
-} */
+    .question-box {
+    float: right;
+    margin: 2rem 2rem 0rem 0rem;
+    background: gray;
+    color: white;
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+}

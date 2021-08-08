@@ -16,7 +16,12 @@ main {
 .wrap{
     background-color: white;
     border-radius: 10px;
-    padding : 1rem;
+    padding : 2rem;
+    width: 40%;
+}
+
+.mb-3{
+    width: 100%;
 }
 
 

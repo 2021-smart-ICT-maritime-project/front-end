@@ -10,61 +10,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-<<<<<<< HEAD
-=======
-}
-
-@media screen and (min-width: 768px) {
-    header {
-        position: absolute;
-        top: 16%;
-        left: 21%;
-        bottom: 30%;
-    }
-
-    section {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 0.1fr 0.9fr;
-
-        width: 60%;
-        position: absolute;
-        top: 39%;
-        left: 21%;
-
-        background: gainsboro;
-        border-radius: 10px;
-
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    header {
-        position: absolute;
-        top: 16%;
-        left: 3%;
-        margin-right: 11%;
-    }
-
-    section {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 0.1fr 0.9fr;
-
-        width: 94%;
-        position: absolute;
-        top: 43%;
-        left: 3%;
-
-        background: gainsboro;
-        border-radius: 10px;
-
-        text-align: center;
-
-        font-size: 0.9em;
-    }
->>>>>>> 4d0b9f646e5daaabe4919324b8c2daf105bce6da
 }
 
 section > div {
@@ -77,7 +22,6 @@ section > div {
     padding-bottom: 0.5em;
 }
 
-<<<<<<< HEAD
 button {
     height: 2em;
     width: 10em;
@@ -99,10 +43,6 @@ button:focus {
 button:hover {
     background: rgba(0, 109, 255, 0.9);
     cursor: pointer;
-=======
-.btn:hover{
-    opacity: 0.9;
->>>>>>> 4d0b9f646e5daaabe4919324b8c2daf105bce6da
 }
 
 p {
@@ -176,6 +116,7 @@ details[open] > summary ~ * {
         top: 16%;
         left: 21%;
         bottom: 30%;
+        color: white;
     }
 
     section {
@@ -201,13 +142,13 @@ details[open] > summary ~ * {
         position: absolute;
         top: 16%;
         left: 3%;
-        margin-right: 11%;
+        color: white;
     }
 
     section {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 0.1fr 0.9fr;
+        grid-template-columns: 0.15fr 0.85fr;
         width: 94%;
         position: absolute;
         top: 47%;

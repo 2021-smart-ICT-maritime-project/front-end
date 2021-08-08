@@ -1,5 +1,6 @@
 *{
     font-family: 'Noto Sans KR', sans-serif;
+	margin: 0;
 }
 
 .background-img{
@@ -13,10 +14,21 @@
 
 p{
     padding: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 button{
     display: inline-block;
+}
+
+main{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.6fr 0.4fr;
+	position: absolute;
+	top: 19%;
+    left: 21%;
+	gap: 1%;
 }
 
 .raw-dialogue{
@@ -27,9 +39,6 @@ button{
     width: 40em;
 	border-radius: 15px;
 	border: 1px solid gainsboro;
-    position: absolute;
-    top: 150px;
-    left: 420px;
 
 }
 
@@ -38,18 +47,36 @@ button{
     flex-direction: column;
     background: aliceblue;
     padding: 3em 3em 1.5em 3em;
-    width: 20em;
+    width: 100%;
+    margin-bottom: 0px;
+	vertical-align: top;
+	border-radius: 15px;
+	border: 1px solid gainsboro;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    background: lightyellow;
+    padding: 3em 3em 1.5em 3em;
+    width: 21%;
     margin-bottom: 0px;
 	vertical-align: top;
 	border-radius: 15px;
 	border: 1px solid gainsboro;
 
     position: absolute;
-    top: 170px;
-    left: 1080px;
+    top: 19%;
+    left: 55%;
 }
+
+.info > p{
+	margin-bottom: 0em;
+}
+
 .submit-box{
-    text-align: center;
+    text-align: right;
     margin-top: 20px;
 }
 
