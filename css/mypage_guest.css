@@ -44,6 +44,17 @@ li {
     display: inline-block;
 }
 
+.info-box .btn {
+    background-color: #24457d;
+    border-color: #24457d;
+    color: white;
+}
+
+.info-box .btn:hover {
+    background-color: #305dab;
+    border-color: #366ac2;
+}
+
 .connection{
     display: inline;
 }

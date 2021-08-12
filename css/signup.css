@@ -28,7 +28,7 @@ h1 {
 }
 
 .wrap {
-    width: 20rem;
+    width: 29rem;
     margin: 5rem auto;
     border-radius:10px;
     border: 1px solid gainsboro;
@@ -121,7 +121,7 @@ h1 {
 
 #inputPhone {
     display: inline-block;
-    width: 65%;
+    width: 76%;
 }
 
 #verifyPhoneButton {
