@@ -17,7 +17,7 @@ main {
     background-color: white;
     border-radius: 10px;
     padding: 2rem;
-    width: 40%;
+    width: 50%;
     border: 1px solid gainsboro;
 }
 
@@ -53,4 +53,16 @@ h2 {
 
 div.save {
     text-align: center;
+}
+
+@media screen and (min-width : 425px) and (max-width:768px) {
+    .wrap{
+        width:70%;
+    }
+}
+
+@media screen and (min-width : 320px) and (max-width:424px) {
+    .wrap{
+        width:90%;
+    }
 }

@@ -24,7 +24,7 @@ main a:hover {
     color:white;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -47,6 +47,45 @@ main a:hover {
     p {
         font-weight: bold;
         font-size: 2.5em;
+    }
+
+    div {
+        padding: 2em;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        top: 15px;
+        left: 20px;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: absolute;
+        top: 32%;
+        left: 17%;
+        bottom: 50vh;
+        right: 40vh;
+        gap: 5%;
+        width: 65%;
+    }
+
+    section {
+        border: 3px solid white;
+        border-radius: 10px;
+        text-align: center;
+        padding: 2em;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 2em;
     }
 
     div {
