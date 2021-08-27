@@ -76,7 +76,17 @@ footer {
     position: fixed;
     top: 95vh;
     left: 10vh;
+    background-color: black;
+    text-align:center;
+    color:white;
 }
+
+/* footer {
+    background-color: black;
+    transform: translateY(125vh);
+    text-align:center;
+    color:white;
+} */
 
 ul {
     list-style: none;

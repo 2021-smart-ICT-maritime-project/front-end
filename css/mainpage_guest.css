@@ -57,7 +57,6 @@ header ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-
     padding: 0;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 1);
 }
@@ -118,7 +117,7 @@ img {
     row-gap: 10px;
 }
 
-.awaiting-title {
+.apply-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,11 +141,12 @@ img {
     /*border-radius: 50px;*/
 }
 
+
 footer {
-    /* background-color: #24457d; */
+    background-color: black;
+    transform: translateY(125vh);
+    text-align:center;
     color:white;
-    transform: translateY(120vh);
-    text-align: center;
 }
 
 footer a:visited{
@@ -188,7 +188,7 @@ footer a:link{
         padding: 0.6em;
     }
 
-    .awaiting {
+    .apply {
         height: 25vh;
         grid-column-start: 2;
         grid-column-end: 3;
@@ -202,7 +202,7 @@ footer a:link{
         /*margin: 2rem 18rem 2rem 2rem;*/
     }
 
-    .awaiting-box {
+    .apply-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
         position: relative;
@@ -244,7 +244,9 @@ footer a:link{
     }
 
     /* 같은 내용을 굳이 또 표현할 필요는 없어서 화면에서 안보이게 처리함 */
-    .waiting-bar, .upload-bar, .faq-bar {
+    .waiting-bar,
+    .result-bar,
+    .faq-bar {
         display: none;
     }
 
@@ -255,11 +257,11 @@ footer a:link{
         padding: 0.3em;
     }
 
-    div > .qlist {
+    div>.qlist {
         text-align: left;
     }
 
-    .awaiting {
+    .apply {
         grid-column-start: 2;
         grid-column-end: 3;
         /*margin: 2rem 18rem 2rem 2rem;*/
@@ -271,7 +273,7 @@ footer a:link{
         /*margin: 2rem 18rem 2rem 2rem;*/
     }
 
-    .awaiting-box {
+    .apply-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
         position: relative;
@@ -285,4 +287,3 @@ footer a:link{
         top: 10%;
     }
 }
-

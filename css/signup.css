@@ -1,3 +1,7 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 body {
     overflow: auto;
     margin: 0;

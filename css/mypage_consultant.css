@@ -2,6 +2,14 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+.background-img{
+    background-image: url("../img/bg.png");
+    background-size: auto;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 body {
     margin-top: 0px;
     line-height: 1.6;
@@ -14,6 +22,8 @@ main {
     justify-content: center;
     height: 100vh;
 }
+
+
 
 .container {
     width: 1600px;

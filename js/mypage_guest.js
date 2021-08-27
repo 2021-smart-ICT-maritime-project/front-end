@@ -10,3 +10,23 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 	})
 })
+
+if (window.location.hash == "#awaiting") {
+    var tab_id = "tab-2"
+
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $('#tab-awaiting').addClass('current');
+    $("#" + tab_id).addClass('current');
+}
+
+if (window.location.hash == "#done") {
+    var tab_id = "tab-3"
+
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $('#tab-awaiting').addClass('current');
+    $("#" + tab_id).addClass('current');
+}

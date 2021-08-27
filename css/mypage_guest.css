@@ -10,6 +10,15 @@ body {
     line-height: 1.6;
 }
 
+.background-img{
+    background-image: url("../img/bg.png");
+    background-size: auto;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 main {
     display: flex;
     flex-direction: column;
