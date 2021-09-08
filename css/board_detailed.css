@@ -3,7 +3,8 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-body, html {
+body,
+html {
     overflow: auto;
     margin: 0;
     height: 100%;
@@ -33,7 +34,7 @@ body, html {
         position: absolute;
         top: 27%;
         left: 23%;
-
+        right: 23%;
         background: white;
         border-radius: 10px;
         border: 1px solid gainsboro;
@@ -42,7 +43,7 @@ body, html {
     }
 
 
-    section > p {
+    section>p {
         margin-top: 28px;
     }
 }
@@ -72,13 +73,13 @@ body, html {
     }
 
 
-    section > p {
+    section>p {
         margin: 0px 20px 0px 20px;
     }
 }
 
 
-section > div {
+section>div {
     background: #2471A3;
     color: #fff;
     padding: 10px;
@@ -90,7 +91,7 @@ section > div {
     border: 1px solid gainsboro;
 }
 
-section > p > a {
+section>p>a {
     margin-top: 1em;
 
     display: block;
@@ -105,7 +106,7 @@ article {
     margin: 25px 25px 10px 25px;
 }
 
-article > p {
+article>p {
     padding: 0.5em;
     font-size: 1.1em;
 }
@@ -155,6 +156,17 @@ article > p {
     margin-left: -10px;
 }
 
-.question, .answer {
+.question,
+.answer {
     font-weight: bold;
+}
+
+footer {
+    background: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: auto;
+    bottom: 0;
 }

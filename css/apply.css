@@ -135,3 +135,9 @@ main a:hover {
         left: 10px;
     }
 }
+
+footer {
+    transform: translateY(92vh);
+    text-align:center;
+    color: white;
+}

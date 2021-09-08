@@ -86,21 +86,21 @@ ul.tabs {
 }
 
 ul.tabs li {
-    background: none;
-    color: #222;
+    background: #4444;
+    color: white;
     display: inline-block;
     padding: 10px 15px;
     cursor: pointer;
 }
 
 ul.tabs li.current {
-    background: #ededed;
+    background: white;
     color: #222;
 }
 
 .tab-content {
     display: none;
-    background: #ededed;
+    background: white;
     padding: 15px;
     border-radius: 0px 13px 13px 13px;
 }

@@ -18,9 +18,7 @@ body {
 }
 
 footer {
-    /* position: fixed; */
-    top: 95vh;
-    left: 10vh;
+    text-align:center;
 }
 
 h1 {
@@ -129,6 +127,6 @@ h1 {
 }
 
 #verifyPhoneButton {
-    display: inline-block;
+    display: block;
     float: right;
 }

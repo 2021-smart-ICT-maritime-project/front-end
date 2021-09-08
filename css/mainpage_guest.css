@@ -3,10 +3,12 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+
+
 .searches {
     position: fixed;
     top: 1.75rem;
-    left: 40vw;
+    left: 70vw;
     display: flex;
     color: white;
     cursor: pointer;
@@ -84,8 +86,8 @@ main section {
 }
 
 input {
-    width: 20em;
-    border-radius: 7px;
+    width: 15em;
+    border: 1px solid gray;
 }
 
 img {
@@ -287,3 +289,10 @@ footer a:link{
         top: 10%;
     }
 }
+
+/* 320px 가로 스크롤바 없애기 */
+
+/* nav{
+    overflow-x:hidden;
+    overflow-y: auto;
+} */

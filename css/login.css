@@ -103,3 +103,9 @@ p {
         width: 20rem;
     }
 }
+
+footer {
+    margin:1rem;
+    text-align:center;
+    color:white;
+}
