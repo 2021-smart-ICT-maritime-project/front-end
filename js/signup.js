@@ -96,3 +96,8 @@ function checkPhoneNum() {
         error[4].style.display = "none";
     }
 }
+
+function confirm(){
+    alert('회원가입이 됐습니다.')
+    location.href = "../html/index.html"
+}

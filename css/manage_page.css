@@ -12,7 +12,7 @@
     /*background-size: cover;*/
 }
 
-p {
+p,p > span {
     padding: 0.5em;
     margin-bottom: 0.5em;
 }
@@ -26,8 +26,10 @@ main {
     grid-template-rows: 0.6fr 0.4fr;
     position: absolute;
     top: 19%;
-    left: 26%;
+    /*left: 26%;*/
     gap: 1%;
+
+    margin: 5%;
 }
 
 .raw-dialogue {
@@ -35,7 +37,7 @@ main {
     flex-direction: column;
     background: white;
     padding: 3em;
-    width: 40em;
+    width: 100%;
     border-radius: 15px;
     border: 1px solid gainsboro;
 
@@ -77,7 +79,7 @@ main {
     height: fit-content;
 }
 
-span {
+.help {
     font-size: 0.7em;
     color: gray;
 }
