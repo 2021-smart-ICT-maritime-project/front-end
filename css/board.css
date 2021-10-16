@@ -1,7 +1,7 @@
 * {
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
-    
+
 }
 
 .background-img {
@@ -13,11 +13,15 @@
     background-attachment: fixed;
 }
 
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
 
 header {
-    color:white;
+    color: white;
     position: absolute;
-    top:18vh;
+    top: 18vh;
 }
 
 section {
@@ -30,8 +34,8 @@ section {
     border: 1px solid gainsboro;
     text-align: center;
     position: absolute;
-    top:40vh;
-    left:22vw;
+    top: 40vh;
+    left: 22vw;
 }
 
 section > div {
@@ -148,20 +152,15 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 79, 255, 0.6);
 }
 
-.wrap{
-    display: flex;
-    flex-direction: column;
-}
-
-@media screen and (max-width:1400px) {
+@media screen and (max-width: 1400px) {
     section {
-        width : 85%;
+        width: 85%;
         left: 9%;
-        top:43vh;
+        top: 43vh;
     }
 }
 
-@media screen and (max-width:988px) {
+@media screen and (max-width: 988px) {
     section {
         display: grid;
         grid-template-rows: 1fr;
@@ -172,8 +171,8 @@ button:hover {
         border: 1px solid gainsboro;
         text-align: center;
         position: absolute;
-        top:46vh;
-        left:5%;
+        top: 46vh;
+        left: 5%;
     }
 
     button {
@@ -193,29 +192,31 @@ button:hover {
     }
 }
 
-@media screen and (max-width:426px) {
-    header{
+@media screen and (max-width: 426px) {
+    header {
         margin-left: 4%;
         margin-right: 4%;
     }
 }
 
-@media screen and (min-width:427px) and (max-width:768px) {
-    header{
-        margin-left:6%;
+@media screen and (min-width: 427px) and (max-width: 768px) {
+    header {
+        margin-left: 6%;
     }
-    
+
 }
 
-@media screen and (min-width:769px) and (max-width:1400px){
-    header{
-        margin-left : 9%;
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+    header {
+        margin-left: 9%;
+        margin-top: 5%;
     }
 }
 
-@media screen and (min-width:1401px) {
-    header{
-        margin-left : 22%;
+@media screen and (min-width: 1401px) {
+    header {
+        margin-left: 22%;
+        margin-top: 2%;
     }
 }
 
