@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
+		let tab_id = $(this).attr('data-tab');
 
 		$('ul.tabs li').removeClass('current');
 		$('.tab-content').removeClass('current');
@@ -12,7 +12,7 @@ $(document).ready(function(){
 })
 
 if (window.location.hash == "#awaiting") {
-    var tab_id = "tab-2"
+    let tab_id = "tab-2"
 
     $('ul.tabs li').removeClass('current');
     $('.tab-content').removeClass('current');
@@ -22,11 +22,15 @@ if (window.location.hash == "#awaiting") {
 }
 
 if (window.location.hash == "#done") {
-    var tab_id = "tab-3"
+    let tab_id = "tab-3"
 
     $('ul.tabs li').removeClass('current');
     $('.tab-content').removeClass('current');
 
-    $('#tab-awaiting').addClass('current');
+    $('#tab-done').addClass('current');
     $("#" + tab_id).addClass('current');
+}
+
+function todetail(){
+    location.href = "../html/board_detailed.html"
 }

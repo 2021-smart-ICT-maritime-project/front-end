@@ -199,7 +199,7 @@ ul.tabs li.current {
     }
 
     td:nth-of-type(2):before {
-        content: "민원인";
+        content: "답변인";
     }
 
     td:nth-of-type(3):before {
